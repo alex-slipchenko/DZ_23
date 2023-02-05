@@ -18,7 +18,7 @@ function Boo() {
             }
             if (i == 4) {
                 console.log('finish')
-                return { value: i, done: true }
+                return { value:undefined, done: true }
             }
 
         }
@@ -31,4 +31,5 @@ const iterator = Boo();
 console.log(iterator.next().value);
 console.log(iterator.next().value);
 console.log(iterator.next().value);
-console.log(iterator.next().done);
+console.log(iterator.next().value);
+
